@@ -61,6 +61,7 @@ php -S 192.168.0.10:8000
 </sub>
 
 <p>
+    <br/>
     O banco de dados utilizado pela aplicação é o PostgreSQL. O sistema depende dele para o armazenamento dos dados. Crie um banco com o nome "safeparkdb" e importe o arquivo da pasta <a href="https://github.com/imAlric/SafePark/tree/master/database">database</a>. <br/><br/>
     O banco já vem com um usuário padrão para teste. <br/>
     Usuário: admin@safepark.com <br/>
