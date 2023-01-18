@@ -35,7 +35,7 @@ desenvolvido com:
     a performance do sistema e agilidade na execução.<br/>
 </p>
 
-<h2 id="#test">Testar o Sistema</h2>
+<h2 id="test">Testar o Sistema</h2>
 <p>
     O projeto foi desenvolvido com React.js e produzido por meio de Node.js. Seu teste pode ser 
     realizado por meio da execução da build acompanhada com os arquivos do projeto.
@@ -61,6 +61,7 @@ php -S 192.168.0.10:8000
 </sub>
 
 <p>
+    <br/>
     O banco de dados utilizado pela aplicação é o PostgreSQL. O sistema depende dele para o armazenamento dos dados. Crie um banco com o nome "safeparkdb" e importe o arquivo da pasta <a href="https://github.com/imAlric/SafePark/tree/master/database">database</a>. <br/><br/>
     O banco já vem com um usuário padrão para teste. <br/>
     Usuário: admin@safepark.com <br/>
@@ -91,7 +92,7 @@ php -S 192.168.0.10:8000
     <li>CryptoJS <a href="https://github.com/brix/crypto-js">https://github.com/brix/crypto-js</a></li>
 </ul>
 
-<h2 id="#final">Considerações Finais</h2>
+<h2 id="final">Considerações Finais</h2>
 <p>
     Este projeto foi desenvolvido de forma acadêmica. Nem todas as técnicas utilizadas são as melhores práticas, mas, houve um considerável esforço para que o sistema se adequasse às "maneiras corretas". Pretendo futuramente, com maior conhecimento, aprimorar o código do sistema atual nas áreas que eu encontre mais vulnerabilidades ou hajam formas mais práticas de serem feitas. <br/><br/>
     Com isto, finalizo o meu primeiro projeto com React.js, obrigado por ter acompanhado até aqui.
