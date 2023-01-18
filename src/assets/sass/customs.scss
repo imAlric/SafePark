@@ -1,0 +1,218 @@
+@use 'colors';
+
+#success-alert{
+    animation-name: fade-in;
+    animation-duration: 0.5s;
+    border: none;
+    background-color: colors.$success--color !important;
+}
+
+.showPass{
+    position:absolute; 
+    right:10px; 
+    bottom:5px;
+}
+
+.bi-eye, .bi-eye-slash {
+    cursor: pointer;
+}
+
+.bi-toggle-off, .bi-toggle-on{
+    transition: all 0.3s ease;
+}
+
+.hr--custom{
+    width: 100%;
+    opacity: 1;
+    border-top: 1px solid white;
+}
+
+.warning--alert{
+    background-color: colors.$warning--color;
+    padding: 5px;
+    border-radius: 10px;
+    animation-name: fade-in;
+    animation-duration: 0.6s;
+}
+
+.warning--button{
+    background-color: colors.$warning--color !important;
+    border-color: colors.$warning--color !important;
+}
+
+.warning--input{
+    border-color: colors.$warning--color !important;
+}
+
+.custom--select{
+    text-align: center;
+    color: white !important;
+    padding-inline-start: 4px;
+    background-color: colors.$default--color !important;
+    border-radius: 10px;
+    background-image: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'><path fill='none' stroke='white' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='m2 5 6 6 6-6'/></svg>");
+}
+
+.pointer--hover{
+    &:hover{
+        cursor: pointer !important;
+    }
+}
+.custom--tooltip{
+    max-width: 180px;
+}
+
+.required{
+    color: colors.$warning--color;
+}
+.required-icon{
+    position: relative;
+    font-size: 9px;
+    top: -2px;
+    color: colors.$warning--color;
+}
+
+.i--tooltip{
+    margin-inline: 5px;
+    position: relative;
+    bottom: 5px;
+    font-size: 8px;
+}
+
+.custom--link{
+    color: white !important;
+    text-decoration: none !important;
+    text-align: center;
+    white-space: nowrap;
+    padding: 10px;
+    height:45px;
+    width: 160px;
+    margin: 5px;
+    border-radius: 20px;
+    border: solid 1px white;
+    &:hover{
+        transition: all 0.1s ease;
+            transform: scale(1.08);
+            transform-origin: center;
+    }
+}
+
+.custom--title{
+    border: solid 1px white;
+    padding: 5px;
+    border-radius: 20px;
+}
+
+.dropdown {
+    .dropdown-menu{
+        left: 50%;
+        right: auto;
+        transform: translate(-50%, 0); 
+        animation-name: fade-in;
+        animation-duration: 0.2s;
+        .nav--active {
+            color: white;
+            background-color: colors.$default-bright--color !important;
+        }
+        .dropdown-item{
+            &:hover{
+                transition: all 0.2s ease;
+                background-color: colors.$default--color;
+            }
+        }
+    }
+}
+
+.modal--logout{
+    .fa-triangle-exclamation, .fa-circle-user{
+        color: colors.$warning--color !important;
+    }
+}
+
+.sm-x{
+    width:82px !important;
+}
+.sm{
+    width: 120px !important;
+}
+.md{
+    width: 180px !important;
+}
+.size-sm{
+    width:35px;
+    height: 35px;
+}
+
+.modal {
+    .modal-content{
+        background-color: colors.$dark--color;
+    }
+    .custom--span{
+        text-align: center;
+        white-space: nowrap;
+        padding: 10px;
+        height:45px;
+        width: 160px;
+        margin: 5px;
+        border-radius: 20px;
+        border: solid 1px white;
+        &:hover{
+            transition: all 0.1s ease;
+            transform: scale(1.05);
+            transform-origin: center;
+            cursor: pointer;
+        }
+    }  
+}
+
+.invalid, .invalid:focus{
+    outline: none;
+    border-color: colors.$warning--color !important;
+    animation-name: shake-horizontal;
+    animation-duration: 0.2s;
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+    height: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: transparent !important;
+    border-radius: 25px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #604FC8;
+    border-radius: 25px;
+    &:hover {
+        background: #8878ee;
+    }
+}
+
+.form-check-input{
+    background-color: colors.$dark--color !important;
+    border-color: colors.$purple--color !important;
+}
+
+input[type=number] { 
+    -moz-appearance: textfield;
+    appearance: textfield;
+    margin: 0; 
+}
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button { 
+      -webkit-appearance: none; 
+      margin: 0; 
+}
+
+::-webkit-calendar-picker-indicator {
+    filter: invert(1);
+}
+
+.date--range{
+    input[type="date"]{
+        width: 120px !important;
+        text-indent: 0;
+    }
+}

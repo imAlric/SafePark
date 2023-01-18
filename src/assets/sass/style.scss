@@ -1,0 +1,63 @@
+@use 'colors'; @use 'animations'; @use 'containers'; @use 'customs'; @use 'mediaquery';
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body,html {
+    height: 100%;
+    width: 100vw;
+}
+
+body {
+    font-family: 'Raleway', 'Segoe UI', 'Arial';
+    color: white;
+    cursor: default;
+
+    background-color: colors.$background--color;
+    background: colors.$background--gradient;
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    overflow: hidden;
+
+}
+
+nav{
+    position: fixed !important;
+    height: 5rem;
+    top: 0;
+    width: 100%;
+    .container-fluid {
+        margin-inline: 15rem;
+    }
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 98vh;
+    .main--warning {
+        border: solid 1px white;
+        border-radius: 25px;
+        padding: 5px;
+        i {
+            color: colors.$purple--color;
+        }
+    }
+}
+
+footer {
+    position: fixed;
+    height: 5rem;
+    bottom: 0;
+    width: 100%;
+    white-space: nowrap;
+    .nav-link {
+        margin-inline: 15px;
+    }
+}

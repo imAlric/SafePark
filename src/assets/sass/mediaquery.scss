@@ -1,0 +1,33 @@
+@media screen and (max-width:767px){
+    nav{
+        .container-fluid {
+            margin-inline: 1rem !important;
+        }
+    }
+
+    body, html{
+        overflow-x: hidden !important;
+        overflow-y: auto !important;
+        max-height: 100vh;
+    }
+
+    footer{
+        .nav-link{
+            margin-inline:0px !important;
+        }
+        .row{
+            .navbar-nav{
+                display: none;
+            }
+            margin-inline: auto !important;
+        }
+    }
+
+    .dropdown {
+        .dropdown-menu{
+            left: 90% !important;
+            right: auto;
+            transform: translate(-80%, 0); 
+        }
+    }
+}

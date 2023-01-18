@@ -1,0 +1,57 @@
+//Background
+$background--color: rgba(21,18,51,1);
+$background--gradient: linear-gradient(30deg, rgba(47,38,99,1) 0%, rgba(21,18,51,1) 50%, rgb(28, 63, 104) 100%);
+
+//Cores
+$default--color: #151233;
+$default-bright--color: #1b1749;
+$dark--color: #08061B;
+$blue--color: #2D81E3;
+$purple--color: #604FC8;
+$success--color: #2e9c6e;
+$danger--color: #d36262;
+$warning--color: #cc0303;
+
+//Gradientes
+$dark-purple--gradient: linear-gradient(36deg, rgb(91, 69, 212) 0%, rgb(49, 19, 133) 100%);
+
+//Classes rápidas de cores.
+.default-color{
+    color: $default--color !important;
+}
+.dark-color{
+    color: $dark--color !important;
+}
+
+.blue--accent-color{
+    color: $blue--color !important;
+}
+.purple--accent-color{
+    color: $purple--color !important;
+}
+
+.warning--accent-color{
+    color: $warning--color;
+}
+
+.default-bg{
+    background-color: $default--color !important;
+}
+.dark-bg{
+    background-color: $dark--color !important;
+}
+
+.success--accent-color{
+    color: $success--color !important;
+}
+
+.blue--accent-bg{
+    background-color: $blue--color !important;
+}
+.purple--accent-bg{
+    background-color: $purple--color !important;
+}
+
+.text-muted{
+    color: rgb(99, 99, 99) !important;
+}

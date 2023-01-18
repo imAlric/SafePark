@@ -1,0 +1,204 @@
+@use 'colors';
+
+.none--container{
+    border: solid 1px white;
+    padding: 8px;
+    border-radius: 15px;
+
+    animation-name: fade-in;
+    animation-duration: 0.8s;
+
+    i{
+        color: colors.$purple--color;
+    }
+}
+
+.main--container{
+    border: solid 1px white;
+    border-radius: 10px;
+    height:30rem;
+    width:30rem;
+
+    background-color: #08061B;
+}
+
+.dark--container{
+    border: solid 1px white;
+    padding: 8px;
+    border-radius: 25px;
+    background-color: rgb(8, 6, 27, 0.9);
+}
+
+.home--main{
+    animation-name: fade-in;
+    animation-duration: 1.5s;
+}
+
+.form--container{
+    input{
+        border-radius: 10px;
+        border: solid 1px white;
+        outline: none;
+        text-indent: 5px;
+    
+        color: white !important;
+        padding: 5px;
+        background-color: #151233;
+    
+        width: 250px;
+    }
+    textarea{
+        border-radius: 10px;
+        border: solid 1px white;
+        outline: none;
+        text-indent: 5px;
+        resize: none;
+    
+        color: white !important;
+        padding: 5px;
+        background-color: #151233;
+    
+        width: 250px;
+    }
+    select{
+        width:110px;
+        height:37px;
+        text-indent: 5px;
+        border-radius: 10px;
+        border-color: white;
+    }
+    .link--safe{
+        transition: all 0.1s ease;
+        border-color: colors.$blue--color !important;
+        color: colors.$blue--color !important;
+    }
+    .link--warning{
+        transition: all 0.1s ease;
+        border-color: colors.$warning--color !important;
+        color: colors.$warning--color !important;
+    }
+    button{
+        border-radius: 15px;
+        border: solid 1px white;
+    
+        color: white !important;
+        padding: 8px;
+        background: none;
+        &:hover{
+            transition: all 0.1s ease;
+            transform-origin: center;
+            transform: scale(1.03);
+        }
+    }
+}
+.vehicle--container, .customers--container, .staff--container, .movement--container, .sector--container{
+    margin-top: 1.5rem;
+    width: 50rem; 
+    height: 42.5rem;
+
+    .table-border{
+        border: solid 1px white;
+        margin-inline: 4.8rem; 
+        border-radius: 5px;
+        max-height: 480px;
+        animation-name: fade-in;
+        animation-duration: 1s;
+    }
+
+    .table-loader, .table-render, .table-notfound{
+        height:30rem;
+        width: 100%;
+    }
+    
+    table{
+        margin: 0 !important;
+        th, thead{
+            position: sticky !important;
+            top: 0;
+            z-index: 1;
+        }
+        td{
+            width:100px;
+            white-space:nowrap;
+            overflow: auto;
+            max-width:100px;
+            vertical-align: middle;
+        }
+        tr th, tr td{
+            a{
+                margin-inline: 2px;
+            }
+        }
+    }
+    .filter{
+        input[type=text]{
+            height: 37px;
+            padding-right: 45px !important;
+            outline: none;
+            text-indent: 5px;
+        
+            border-radius: 15px;
+            border: solid 1px white;
+            outline: none;
+            text-indent: 5px;
+        
+            color: white !important;
+            padding: 5px;
+            background-color: #08061B;
+        
+            width: 200px !important; 
+        }
+        select{
+            width:110px;
+            height:37px;
+            text-indent: 5px;
+            border-radius: 15px;
+            border-color: white;
+        }
+    }
+    .vehicle--option, .customer--option, .staff--option, .sector--option, .movement--option{
+        border-radius: 15px;
+        border: solid 1px white;
+    
+        max-width:200px;
+        color: white !important;
+        padding: 8px;
+        background: none;
+    }
+}
+
+.sector-table--container{
+    display: flex;
+    flex-flow: wrap;
+    justify-content: center;
+    width: 500px;
+
+    .sector--card{
+        margin: 10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 10px;
+        border: solid 1px white;
+        width: 60px;
+        height: 60px;
+        background: colors.$dark-purple--gradient;
+        &:hover{
+            transition: all 0.1s ease;
+            transform: scale(1.08);
+            transform-origin: center;
+    
+            box-shadow: 0 0 15px colors.$purple--color;
+    
+            cursor: pointer;
+        }
+    }  
+}
+
+.vehicle-link--container, .customer-link--container{
+    border: solid 1px white;
+    border-radius: 10px;
+
+    width: 250px;
+    padding: 15px;
+}
