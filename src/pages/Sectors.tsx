@@ -20,7 +20,7 @@ const Sectors = () => {
     const [TableData, setTableData] = useState<any>([]);
 
     useEffect(() => {
-        $.get('http://localhost:8000/src/php/sectors-table.php', { Action: "sectors" }, (response) => {
+        $.get("http://"+window.location.hostname+":8000/src/php/sectors-table.php", { Action: "sectors" }, (response) => {
             var jsonData = JSON.parse(response);
             if (jsonData.success !== 0) {
                 setTableData(jsonData);
